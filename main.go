@@ -37,7 +37,6 @@ func listImagesWithTags(acrName string) (bool, error) {
 		return false, fmt.Errorf("error getting list of repositories: %v", err)
 	}
 
-	// Split the repositories string into individual repository names
 	repoNames := strings.Fields(string(repositories))
 
 	// Loop through each repository and get the list of tags
@@ -56,7 +55,7 @@ func listImagesWithTags(acrName string) (bool, error) {
 		// Split the tags string into individual tag names
 		tagNames := strings.Fields(string(tags))
 
-		// Check if the test image with tag exists in this repository
+		// Check if the test image with tag exists in this repository or not
 		for _, tag := range tagNames {
 			if repo+":"+tag == test_image {
 				return true, nil
