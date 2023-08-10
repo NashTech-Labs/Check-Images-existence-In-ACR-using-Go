@@ -7,8 +7,8 @@
 
 You need to define these values in your code as global varibale before running:-
 
-                	acrName = "testacrmk"  // your ACR name
-	                test_image = "hello-world:1.1.0" // Imagw which you are looking for 
+                	acrName = "testacrmk"               // your ACR name
+	                test_image = "hello-world:1.1.0"    // Imagw which you are looking 
 
 Step 1:- Run the go initialization command:
 
